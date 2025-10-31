@@ -1,0 +1,30 @@
+# OS-specific junk
+# Windows
+Thumbs.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS (in case files move around)
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/
+.history/
+
+# Perl/CGI
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Logs
+*.log
+
+# Node/npm leftovers (if any experiments)
+node_modules/
+
+# Images/screenshots not meant for repo
+image.png

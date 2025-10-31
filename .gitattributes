@@ -1,0 +1,4 @@
+# Ensure consistent LF endings for CGI/Perl scripts
+*.cgi text eol=lf
+*.pl  text eol=lf
+*.pm  text eol=lf
