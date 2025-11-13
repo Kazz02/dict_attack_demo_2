@@ -51,21 +51,6 @@ The logic behing hash-based approach:
  - .gitignore: ignore OS/editor artifacts (e.g., Desktop.ini, .vscode/)
  - LICENSE: MIT license
 
-## Publish to GitHub
-You can publish this folder as a Git repository.
-
-Option A — with GitHub CLI:
-1) Initialize and commit locally, then create and push the repo in one go:
-
-    gh repo create <your-repo-name> --source . --public --remote origin --push
-
-Option B — manual remote:
-1) Create an empty repository on GitHub in your browser.
-2) Add the remote and push:
-
-    git remote add origin https://github.com/<your-username>/<your-repo-name>.git
-    git push -u origin main
-
 ## More info about hash-tables
 For more info about hash-tables and Perl data types, please visit the following websites:
 1. Perl data structures: https://perldoc.perl.org/perldsc#HASHES-OF-HASHES 
