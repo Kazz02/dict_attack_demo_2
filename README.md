@@ -46,10 +46,15 @@ The logic behing hash-based approach:
 ## Files included
 - dict_attack_org.cgi: implemantation with hash-based approach. Original nested loop code is commented out but exists in the file
 - name-dict.txt: dictionary file that contains the surnames
+- C4_system_diagram.puml: showing the structure
+- Dictionary_attack_diagram.png: showing the diagram as a png
 - README.md: for additional info and help
  - .gitattributes: enforce LF for Perl/CGI files across platforms
  - .gitignore: ignore OS/editor artifacts (e.g., Desktop.ini, .vscode/)
  - LICENSE: MIT license
+
+## Diagram
+![C4 system diagram](Dictionary_attack_diagram.png)
 
 ## More info about hash-tables
 For more info about hash-tables and Perl data types, please visit the following websites:
