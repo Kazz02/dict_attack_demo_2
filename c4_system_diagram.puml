@@ -1,0 +1,16 @@
+@startuml C4_Context_Diagram_for_Dictionary_Attack_Demo
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+title System Context Diagram for Dictionary Attack Demo
+
+Person(user, "User", "A person using the application to test password strength.")
+System(dict_attack_system, "Dictionary Attack Demo", "A Perl CGI web application that demonstrates a dictionary attack against a 'surname + 4 digits' password pattern.")
+System_Ext(name_dict, "Surname Dictionary", "A text file (name-dict.txt) providing the list of surnames used for the attack.")
+
+Rel(user, dict_attack_system, "Submits password and views results", "HTTPS")
+
+Rel(dict_attack_system, name_dict, "Reads surnames from", "File I/O")
+
+@enduml
